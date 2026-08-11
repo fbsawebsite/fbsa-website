@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="cy">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Canfod Gollyngiadau, Ymchwiliadau Lleidder a Llwydni | FBSA Cymru</title>
+<meta name="description" content="Canfod Gollyngiadau, Ymchwiliadau Lleidder a Llwydni ac Adroddiadau Cyflwr Adeilad annibynnol ar draws De a Gorllewin Cymru. FBSA — rydym yn ymchwilio. Nid ydym yn trwsio. O £220."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.fbsa.co.uk/cy/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0b1929;--navy2:#0f2238;--navy3:#142d48;--gold:#c9a027;--gold2:#b8911f;--white:#ffffff;--off:#f7f6f3;--light:#f0eeea;--border:#e2dfd8;--text:#2e2b28;--muted:#6a6560;--rule:rgba(255,255,255,0.08);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:var(--white);}
+h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.15;}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+ul{list-style:none;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px;}
+.label{display:inline-block;font-family:'Inter',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.label--light{color:rgba(255,255,255,0.45);}
+.label--muted{color:var(--muted);}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 32px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid transparent;border-radius:2px;cursor:pointer;transition:background .15s,border-color .15s,color .15s;white-space:nowrap;}
+.btn--cta{background:var(--gold);color:var(--navy);border-color:var(--gold);}
+.btn--cta:hover{background:var(--gold2);border-color:var(--gold2);}
+.btn--dark{background:var(--navy);color:var(--white);border-color:var(--navy);}
+.btn--dark:hover{background:var(--navy2);}
+.btn--outline{background:transparent;color:var(--navy);border-color:var(--navy);}
+.btn--outline:hover{background:var(--navy);color:var(--white);}
+.btn--outline-light{background:transparent;color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.25);}
+.btn--outline-light:hover{border-color:rgba(255,255,255,0.6);color:var(--white);}
+.btn--lg{padding:18px 44px;font-size:13.5px;}
+.btn--sm{padding:10px 20px;font-size:11.5px;letter-spacing:1px;}
+.nav{position:sticky;top:0;z-index:100;background:var(--navy);border-bottom:1px solid var(--rule);}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.nav__logo img{height:34px;width:auto;}
+.nav__links{display:flex;gap:32px;}
+.nav__links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.55);letter-spacing:0.2px;transition:color .15s;}
+.nav__links a:hover{color:var(--white);}
+.nav__right{display:flex;align-items:center;gap:22px;}
+.nav__lang{display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:0.5px;}
+.nav__lang a{color:rgba(255,255,255,0.3);transition:color .15s;}
+.nav__lang a:hover,.nav__lang a.is-active{color:var(--gold);}
+.nav__lang span{color:rgba(255,255,255,0.14);}
+.nav__cta{display:none;}
+.nav__burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px 4px;}
+.nav__burger span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.65);border-radius:1px;}
+.nav__drawer{display:none;background:var(--navy2);border-top:1px solid var(--rule);}
+.nav__drawer.is-open{display:block;}
+.nav__drawer ul{padding:8px 28px;}
+.nav__drawer ul li a{display:block;padding:12px 0;font-size:15px;color:rgba(255,255,255,0.68);border-bottom:1px solid var(--rule);}
+.nav__drawer ul li:last-child a{border-bottom:none;}
+.nav__drawer__cta{padding:14px 28px 22px;}
+.nav__drawer__cta .btn{width:100%;justify-content:center;}
+.hero{position:relative;min-height:580px;display:flex;align-items:center;overflow:hidden;background-color:var(--navy);}
+.hero__bg{position:absolute;inset:0;background-image:linear-gradient(to right,rgba(11,25,41,0.97) 0%,rgba(11,25,41,0.90) 42%,rgba(11,25,41,0.60) 70%,rgba(11,25,41,0.38) 100%),url('../images/hero-moisture-meter.jpg');background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.hero__inner{position:relative;z-index:1;width:100%;padding:96px 0 88px;}
+.hero__content{max-width:600px;}
+.hero__headline{font-size:clamp(40px,5.5vw,68px);color:var(--white);font-weight:300;letter-spacing:-0.5px;line-height:1.05;margin-bottom:20px;}
+.hero__headline em{font-style:italic;color:var(--gold);display:block;}
+.hero__sub{font-size:clamp(16px,1.8vw,18px);color:rgba(255,255,255,0.58);line-height:1.72;max-width:500px;margin-bottom:40px;}
+.hero__sub strong{color:rgba(255,255,255,0.82);font-weight:500;}
+.hero__manifesto{font-size:13px;color:rgba(255,255,255,0.38);font-style:italic;margin-top:18px;line-height:1.7;max-width:480px;border-left:2px solid rgba(201,160,39,0.3);padding-left:14px;}
+.trust{background:var(--gold);padding:18px 0;}
+.trust__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 36px;}
+.trust__item{display:flex;align-items:center;gap:9px;font-family:'Inter',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:0.6px;color:var(--navy);}
+.trust__item svg{flex-shrink:0;}
+.why{background:var(--navy);padding:88px 0;}
+.why__inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.why__left h2{font-size:clamp(28px,3.5vw,46px);font-weight:300;color:var(--white);line-height:1.1;margin-bottom:24px;}
+.why__left h2 em{font-style:italic;color:var(--gold);}
+.why__lead{font-size:17px;color:rgba(255,255,255,0.58);line-height:1.75;margin-bottom:32px;max-width:480px;}
+.why__no{display:flex;flex-direction:column;gap:14px;}
+.why__no-item{display:flex;align-items:flex-start;gap:14px;padding:16px 20px;border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--gold);border-radius:2px;background:rgba(255,255,255,0.025);}
+.why__no-item strong{display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.3px;color:var(--white);margin-bottom:3px;}
+.why__no-item p{font-size:13px;color:rgba(255,255,255,0.42);line-height:1.5;}
+.why__statement{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:2px;padding:36px 32px;margin-bottom:24px;}
+.why__statement-quote{font-family:'Fraunces',serif;font-size:clamp(20px,2.5vw,28px);font-weight:300;font-style:italic;color:var(--white);line-height:1.3;margin-bottom:20px;}
+.why__statement-quote em{color:var(--gold);font-style:italic;}
+.why__statement p{font-size:14.5px;color:rgba(255,255,255,0.48);line-height:1.7;}
+.why__badge{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(201,160,39,0.08);border:1px solid rgba(201,160,39,0.2);border-radius:2px;}
+.why__badge p{font-size:12.5px;color:rgba(255,255,255,0.45);line-height:1.5;}
+.why__badge strong{color:var(--gold);font-weight:700;}
+.ad4{background:var(--off);padding:88px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.ad4__head{text-align:center;max-width:640px;margin:0 auto 56px;}
+.ad4__head h2{font-size:clamp(28px,3.5vw,42px);font-weight:300;color:var(--navy);margin-bottom:14px;}
+.ad4__head h2 em{font-style:italic;color:var(--gold);}
+.ad4__head p{font-size:16px;color:var(--muted);line-height:1.7;}
+.ad4__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-bottom:40px;}
+.ad4__card{background:var(--white);padding:32px 26px 28px;}
+.ad4__card-num{font-family:'Fraunces',serif;font-size:11px;font-style:italic;color:var(--gold);letter-spacing:2px;margin-bottom:18px;}
+.ad4__card-icon{width:40px;height:40px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.ad4__card-icon svg{width:18px;height:18px;}
+.ad4__card h3{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--navy);margin-bottom:8px;}
+.ad4__card-q{font-size:14.5px;color:var(--muted);line-height:1.55;font-style:italic;}
+.ad4__result{background:var(--navy);border-radius:2px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.ad4__result-text{font-family:'Fraunces',serif;font-size:clamp(18px,2vw,24px);font-weight:300;color:var(--white);}
+.ad4__result-text em{font-style:italic;color:var(--gold);}
+.ad4__result p{font-size:13.5px;color:rgba(255,255,255,0.38);margin-top:4px;max-width:480px;}
+.hiw{background:var(--white);padding:88px 0;border-bottom:1px solid var(--border);}
+.hiw__head{text-align:center;max-width:580px;margin:0 auto 56px;}
+.hiw__head h2{font-size:clamp(28px,3.5vw,42px);font-weight:300;color:var(--navy);margin-bottom:12px;}
+.hiw__head p{font-size:15px;color:var(--muted);line-height:1.7;}
+.hiw__steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:3px;overflow:hidden;}
+.hiw__step{background:var(--white);padding:28px 22px;}
+.hiw__step-num{font-family:'Fraunces',serif;font-size:36px;font-weight:300;font-style:italic;color:var(--gold);opacity:0.35;line-height:1;margin-bottom:16px;}
+.hiw__step h3{font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+.hiw__step p{font-size:13px;color:var(--muted);line-height:1.6;}
+.hiw__step--deposit{border-top:2px solid var(--gold);}
+.hiw__deposit-note{margin-top:48px;background:var(--off);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:2px;padding:20px 24px;display:flex;align-items:flex-start;gap:16px;}
+.hiw__deposit-note-icon{width:32px;height:32px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.hiw__deposit-note-icon svg{width:14px;height:14px;}
+.hiw__deposit-note p{font-size:14px;color:var(--text);line-height:1.65;}
+.hiw__deposit-note strong{color:var(--navy);}
+.david{background:var(--off);padding:88px 0;border-bottom:1px solid var(--border);}
+.david__grid{display:grid;grid-template-columns:260px 1fr;gap:72px;align-items:start;}
+.david__photo{width:100%;border-radius:2px;filter:grayscale(12%);}
+.david__photo-caption{margin-top:12px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);line-height:1.6;}
+.david__content{padding-top:4px;}
+.david__name{font-size:clamp(30px,3.5vw,46px);font-weight:300;color:var(--navy);margin-bottom:4px;}
+.david__role{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:28px;}
+.david__body{font-size:16px;color:var(--text);line-height:1.78;margin-bottom:18px;max-width:560px;}
+.david__guarantee{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:2px;padding:20px 22px;margin-bottom:30px;max-width:560px;}
+.david__guarantee p{font-size:15px;color:var(--text);line-height:1.65;font-style:italic;}
+.david__guarantee strong{font-style:normal;color:var(--navy);}
+.david__creds{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:36px;}
+.cred{font-family:'Inter',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:0.4px;padding:5px 12px;border-radius:2px;background:var(--white);border:1px solid var(--border);color:var(--text);}
+.services{background:var(--white);padding:88px 0;border-bottom:1px solid var(--border);}
+.services__head{margin-bottom:48px;}
+.services__head h2{font-size:clamp(28px,3.5vw,42px);font-weight:300;color:var(--navy);margin-bottom:10px;}
+.services__head p{font-size:15px;color:var(--muted);max-width:480px;line-height:1.7;}
+.services__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:3px;overflow:hidden;}
+.svc{background:var(--off);padding:32px 28px;display:flex;flex-direction:column;}
+.svc__num{font-family:'Fraunces',serif;font-size:11px;font-style:italic;color:var(--gold);letter-spacing:2px;margin-bottom:12px;}
+.svc h3{font-size:18px;font-weight:400;color:var(--navy);margin-bottom:8px;}
+.svc__for{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.svc__desc{font-size:14px;color:var(--muted);line-height:1.68;margin-bottom:22px;flex:1;}
+.svc__receives{margin-bottom:24px;}
+.svc__receives-label{font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.svc__receives ul li{font-size:13px;color:var(--text);padding:3px 0;display:flex;align-items:baseline;gap:8px;}
+.svc__receives ul li::before{content:'—';color:var(--gold);flex-shrink:0;font-size:11px;}
+.svc__footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:20px;margin-top:auto;flex-wrap:wrap;gap:10px;}
+.svc__price{font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:var(--navy);}
+.svc__price span{font-size:11px;font-style:italic;color:var(--muted);margin-left:3px;}
+.receive{background:var(--navy);padding:88px 0;}
+.receive__head{margin-bottom:48px;}
+.receive__head h2{font-size:clamp(28px,3.5vw,42px);font-weight:300;color:var(--white);margin-bottom:10px;}
+.receive__head p{font-size:15px;color:rgba(255,255,255,0.42);max-width:480px;line-height:1.7;}
+.receive__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin-bottom:48px;}
+.receive__item{background:rgba(255,255,255,0.028);padding:28px 24px;}
+.receive__tick{width:26px;height:26px;border-radius:50%;background:rgba(201,160,39,0.12);border:1.5px solid rgba(201,160,39,0.35);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.receive__tick svg{width:11px;height:9px;}
+.receive__item h4{font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:var(--white);margin-bottom:5px;}
+.receive__item p{font-size:13px;color:rgba(255,255,255,0.36);line-height:1.55;}
+.receive__cta{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.receive__note{font-size:13px;color:rgba(255,255,255,0.28);}
+.who{background:var(--off);padding:72px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.who__head{text-align:center;margin-bottom:44px;}
+.who__head h2{font-size:clamp(26px,3vw,38px);font-weight:300;color:var(--navy);margin-bottom:10px;}
+.who__head p{font-size:15px;color:var(--muted);line-height:1.7;}
+.who__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.who__item{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:22px 20px;text-align:center;}
+.who__item-icon{width:36px;height:36px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+.who__item-icon svg{width:16px;height:16px;}
+.who__item h4{font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.who__item p{font-size:12px;color:var(--muted);line-height:1.45;}
+.coverage{background:var(--white);padding:64px 0;border-bottom:1px solid var(--border);}
+.coverage__grid{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start;}
+.coverage__left h2{font-size:clamp(22px,2.5vw,32px);font-weight:300;color:var(--navy);margin-bottom:12px;}
+.coverage__left p{font-size:14.5px;color:var(--muted);line-height:1.7;margin-bottom:20px;}
+.coverage__counties{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.coverage__county{background:var(--off);border:1px solid var(--border);border-radius:2px;padding:16px 18px;}
+.coverage__county-name{font-size:12.5px;font-weight:700;letter-spacing:0.4px;color:var(--navy);margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--border);}
+.coverage__county ul li{font-size:12px;color:var(--muted);padding:2.5px 0;display:flex;align-items:baseline;gap:6px;}
+.coverage__county ul li::before{content:'·';color:var(--gold);font-size:14px;flex-shrink:0;}
+.coverage__other{margin-top:14px;grid-column:1/-1;padding:13px 18px;background:var(--navy);border-radius:2px;font-size:12.5px;color:rgba(255,255,255,0.42);line-height:1.6;}
+.coverage__other strong{color:rgba(255,255,255,0.72);}
+.faq{background:var(--off);padding:80px 0;border-bottom:1px solid var(--border);}
+.faq__head{text-align:center;max-width:560px;margin:0 auto 52px;}
+.faq__head h2{font-size:clamp(26px,3vw,38px);font-weight:300;color:var(--navy);margin-bottom:10px;}
+.faq__head p{font-size:15px;color:var(--muted);line-height:1.7;}
+.faq__grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border:1px solid var(--border);border-radius:3px;overflow:hidden;}
+.faq__item{background:var(--white);padding:28px;}
+.faq__item h4{font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.4;display:flex;align-items:flex-start;gap:12px;}
+.faq__item h4::before{content:'C';font-family:'Fraunces',serif;font-size:13px;font-style:italic;color:var(--gold);flex-shrink:0;margin-top:1px;}
+.faq__item p{font-size:13.5px;color:var(--muted);line-height:1.7;padding-left:26px;}
+.contact{background:var(--white);padding:88px 0;border-bottom:1px solid var(--border);}
+.contact__grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.contact__info h2{font-size:clamp(26px,3vw,38px);font-weight:300;color:var(--navy);margin-bottom:12px;}
+.contact__info > p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.7;}
+.contact__deposit{background:var(--off);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:2px;padding:16px 20px;margin-bottom:28px;}
+.contact__deposit p{font-size:13.5px;color:var(--text);line-height:1.65;}
+.contact__deposit strong{color:var(--navy);}
+.contact__method{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
+.contact__dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px;}
+.contact__method-label{font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
+.contact__method a,.contact__method p{font-size:16px;color:var(--navy);font-weight:500;}
+.contact__method a:hover{color:var(--gold2);}
+.form-wrap{background:var(--off);border:1px solid var(--border);border-radius:3px;padding:36px 32px;}
+.form-wrap h3{font-size:17px;font-weight:400;color:var(--navy);margin-bottom:6px;}
+.form-wrap > p{font-size:13px;color:var(--muted);margin-bottom:26px;line-height:1.55;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.form-field{margin-bottom:14px;}
+.form-field label{display:block;font-size:10.5px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:var(--text);margin-bottom:6px;}
+.form-field input,.form-field select,.form-field textarea{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:2px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);background:var(--white);transition:border-color .15s;-webkit-appearance:none;appearance:none;}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:var(--navy);}
+.form-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236a6560' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:34px;cursor:pointer;}
+.form-field textarea{min-height:90px;resize:vertical;}
+.form-field--check{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.form-field--check input[type="checkbox"]{width:16px;height:16px;flex-shrink:0;margin-top:3px;accent-color:var(--navy);}
+.form-field--check label{font-size:12.5px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--text);line-height:1.55;cursor:pointer;}
+.deposit-confirm{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:2px;padding:18px 20px;margin-bottom:16px;}
+.deposit-confirm__head{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+.deposit-confirm__head h4{font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--navy);}
+.deposit-confirm > p{font-size:12.5px;color:var(--muted);margin-bottom:12px;line-height:1.55;}
+.form-submit{width:100%;margin-top:8px;}
+.form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5;}
+.form-msg{display:none;padding:12px 16px;border-radius:2px;font-size:13px;margin-bottom:16px;line-height:1.5;}
+.form-msg--ok{background:#f0faf4;border:1px solid #92d0a8;color:#185e35;}
+.form-msg--err{background:#fdf2f2;border:1px solid #e0a5a5;color:#7a1f1f;}
+.disclaimer{background:var(--light);border-top:1px solid var(--border);padding:20px 0;}
+.disclaimer p{font-size:11px;color:var(--muted);line-height:1.65;text-align:center;max-width:860px;margin:0 auto;}
+.footer{background:var(--navy);padding:52px 0 0;}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;}
+.footer__brand img{height:34px;width:auto;margin-bottom:14px;}
+.footer__brand p{font-size:13px;color:rgba(255,255,255,0.3);line-height:1.65;max-width:270px;}
+.footer__col h4{font-family:'Inter',sans-serif;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-bottom:14px;}
+.footer__col ul li{margin-bottom:9px;}
+.footer__col ul li a{font-size:13px;color:rgba(255,255,255,0.44);transition:color .15s;}
+.footer__col ul li a:hover{color:var(--gold);}
+.footer__seo{border-top:1px solid var(--rule);padding:20px 0;text-align:center;}
+.footer__seo p{font-size:11px;color:rgba(255,255,255,0.15);line-height:2.2;max-width:900px;margin:0 auto;}
+.footer__seal{text-align:center;padding:28px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.footer__seal img{height:90px;width:auto;opacity:0.65;margin:0 auto 8px;}
+.footer__seal-cap{font-size:10px;color:rgba(255,255,255,0.18);letter-spacing:1.2px;}
+.footer__legal{display:flex;flex-wrap:wrap;gap:16px;padding:20px 0 12px;justify-content:center;}
+.footer__legal a{font-size:11.5px;color:rgba(255,255,255,0.28);cursor:pointer;transition:color .15s;}
+.footer__legal a:hover{color:var(--gold);}
+.footer__ip{border-top:1px solid var(--rule);padding:14px 0;text-align:center;}
+.footer__ip p{font-size:10.5px;color:rgba(255,255,255,0.18);line-height:1.8;max-width:800px;margin:0 auto;}
+.footer__bottom{border-top:1px solid var(--rule);padding:16px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer__bottom-copy{font-size:10.5px;color:rgba(255,255,255,0.18);line-height:1.65;}
+.footer__badges{display:flex;flex-wrap:wrap;gap:5px;}
+.badge{font-size:9.5px;font-weight:700;padding:3px 8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:2px;color:rgba(255,255,255,0.28);}
+.overlay{display:none;position:fixed;inset:0;background:rgba(11,25,41,0.82);z-index:500;align-items:center;justify-content:center;padding:24px;}
+.overlay.is-open{display:flex;}
+.modal{background:var(--white);border-radius:3px;max-width:680px;width:100%;max-height:88vh;overflow-y:auto;padding:44px 40px;position:relative;}
+.modal__close{position:absolute;top:16px;right:18px;background:none;border:none;font-size:24px;cursor:pointer;color:var(--muted);padding:4px 8px;line-height:1;}
+.modal__close:hover{color:var(--navy);}
+.modal h2{font-size:22px;font-weight:400;color:var(--navy);margin-bottom:4px;}
+.modal__ver{font-size:12px;color:var(--muted);margin-bottom:26px;}
+.modal h3{font-size:14px;font-weight:700;color:var(--navy);margin:20px 0 8px;}
+.modal p{font-size:13px;color:var(--text);line-height:1.7;margin-bottom:10px;}
+.modal-tbl{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:12.5px;}
+.modal-tbl th{background:var(--light);padding:8px 12px;text-align:left;font-weight:700;color:var(--navy);border:1px solid var(--border);}
+.modal-tbl td{padding:8px 12px;border:1px solid var(--border);color:var(--text);vertical-align:top;}
+.cookie{position:fixed;bottom:0;left:0;right:0;background:var(--navy2);border-top:1px solid rgba(201,160,39,0.25);z-index:300;padding:14px 28px;}
+.cookie__inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+.cookie p{font-size:12.5px;color:rgba(255,255,255,0.52);flex:1;line-height:1.5;}
+.cookie p a{color:var(--gold);cursor:pointer;}
+.cookie__btns{display:flex;gap:10px;flex-shrink:0;}
+.cookie__accept{padding:9px 20px;background:var(--gold);color:var(--navy);border:none;border-radius:2px;font-size:12px;font-weight:700;cursor:pointer;}
+.cookie__decline{padding:9px 16px;background:transparent;color:rgba(255,255,255,0.38);border:1px solid rgba(255,255,255,0.14);border-radius:2px;font-size:12px;font-weight:600;cursor:pointer;}
+@media(min-width:960px){.nav__cta{display:flex;}}
+@media(max-width:959px){.nav__links,.nav__cta{display:none;}.nav__burger{display:flex;}}
+@media(max-width:900px){.why__inner{grid-template-columns:1fr;gap:48px;}.david__grid{grid-template-columns:1fr;gap:36px;}.ad4__grid{grid-template-columns:1fr 1fr;}.hiw__steps{grid-template-columns:1fr 1fr;}.who__grid{grid-template-columns:repeat(2,1fr);}.contact__grid{grid-template-columns:1fr;gap:44px;}.form-row{grid-template-columns:1fr;gap:0;}.form-wrap{padding:28px 22px;}.footer__grid{grid-template-columns:1fr 1fr;gap:32px;}.footer__brand{grid-column:1/-1;}.footer__bottom{flex-direction:column;align-items:flex-start;}.faq__grid{grid-template-columns:1fr;}}
+@media(max-width:720px){.services__grid{grid-template-columns:1fr;}.receive__grid{grid-template-columns:1fr 1fr;}.coverage__grid{grid-template-columns:1fr;gap:36px;}.coverage__counties{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.hero__inner{padding:72px 0 64px;}.ad4__grid{grid-template-columns:1fr;}.hiw__steps{grid-template-columns:1fr;}.receive__grid{grid-template-columns:1fr;}.coverage__counties{grid-template-columns:1fr;}.who__grid{grid-template-columns:1fr 1fr;}.footer__grid{grid-template-columns:1fr;}.modal{padding:28px 20px;}.cookie__inner{flex-direction:column;align-items:flex-start;gap:10px;}.trust__inner{gap:10px 24px;}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a href="#hero" class="nav__logo"><img src="../images/fbsa_technology_ltd.png" alt="FBSA Technology Ltd"/></a>
+    <div class="nav__links">
+      <a href="#why">Annibyniaeth</a>
+      <a href="#services">Gwasanaethau</a>
+      <a href="#david">David Matthews</a>
+      <a href="#faq">Cwestiynau</a>
+      <a href="#contact">Cysylltu</a>
+    </div>
+    <div class="nav__right">
+      <div class="nav__lang">
+        <a href="../index.html">English</a>
+        <span>|</span>
+        <a href="#" class="is-active">Cymraeg</a>
+      </div>
+      <div class="nav__cta"><a href="#contact" class="btn btn--cta" style="padding:10px 22px;font-size:12px;letter-spacing:1px;">Archebu Arolygiad</a></div>
+      <button class="nav__burger" id="js-burger" aria-label="Agor dewislen" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="js-drawer">
+    <ul>
+      <li><a href="#why" class="js-close-drawer">Annibyniaeth</a></li>
+      <li><a href="#services" class="js-close-drawer">Gwasanaethau</a></li>
+      <li><a href="#david" class="js-close-drawer">David Matthews</a></li>
+      <li><a href="#faq" class="js-close-drawer">Cwestiynau</a></li>
+      <li><a href="#contact" class="js-close-drawer">Cysylltu</a></li>
+      <li><a href="../index.html" style="color:rgba(255,255,255,0.3);">English</a></li>
+    </ul>
+    <div class="nav__drawer__cta"><a href="#contact" class="btn btn--cta js-close-drawer">Archebu Arolygiad</a></div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero__bg"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__content">
+      <span class="label label--light">Ymchwiliadau Adeiladau Annibynnol &nbsp;&middot;&nbsp; De a Gorllewin Cymru</span>
+      <h1 class="hero__headline">Darganfod yr Achos.<em>Profi'r Dystiolaeth.</em></h1>
+      <p class="hero__sub">Ymchwiliadau adeiladau annibynnol ar gyfer gollyngiadau, lleidder, llwydni a diffygion eiddo ar draws De a Gorllewin Cymru.<br/><strong>Mae pob ymchwiliad yn dilyn Safon AD4 FBSA, gan sicrhau bod canfyddiadau wedi'u cefnogi gan dystiolaeth ddogfennol.</strong></p>
+      <a href="#contact" class="btn btn--cta btn--lg">Archebu Arolygiad</a>
+      <p class="hero__manifesto">Rydym yn ymchwilio i adeiladau. Nid ydym yn eu trwsio.<br/>Ein rôl yw pennu'r achos, dogfennu'r dystiolaeth a darparu canfyddiadau annibynnol y gallwch ymddiried ynddynt.</p>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust__inner">
+    <div class="trust__item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0b1929"/><path d="M4 8l2.5 2.5 5.5-5.5" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Canfyddiadau Annibynnol</div>
+    <div class="trust__item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0b1929"/><path d="M4 8l2.5 2.5 5.5-5.5" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Dim Gwaith Trwsio</div>
+    <div class="trust__item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0b1929"/><path d="M4 8l2.5 2.5 5.5-5.5" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Adroddiadau ar Sail Tystiolaeth</div>
+    <div class="trust__item"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0b1929"/><path d="M4 8l2.5 2.5 5.5-5.5" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>O &pound;220</div>
+  </div>
+</div>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="why__inner">
+      <div class="why__left">
+        <span class="label label--light">Ein Safbwynt</span>
+        <h2>Pam Mae Perchnogion Eiddo yn Dewis <em>FBSA</em></h2>
+        <p class="why__lead">Mae'r rhan fwyaf o gontractwyr yn elwa o waith trwsio. Nid felly FBSA. Ein rôl ni yw dod o hyd i'r achos, dogfennu'r dystiolaeth a chyflwyno canfyddiadau annibynnol — dim byd mwy.</p>
+        <div class="why__no">
+          <div class="why__no-item"><div><strong>Dim Gwaith Trwsio</strong><p>Rydym yn ymchwilio. Nid ydym yn cynnal unrhyw waith adfer, trwsio na gosod.</p></div></div>
+          <div class="why__no-item"><div><strong>Dim Gwrthdaro Buddiannau</strong><p>Gan nad oes gennym fuddiant ariannol mewn canlyniadau trwsio, mae ein canfyddiadau yn wirioneddol annibynnol.</p></div></div>
+          <div class="why__no-item"><div><strong>Dim Agenda Cudd</strong><p>Ein hunig ddiddordeb yw cywirdeb. Rydych chi'n derbyn casgliadau ar sail tystiolaeth — nid cymhelliant masnachol.</p></div></div>
+        </div>
+      </div>
+      <div class="why__right">
+        <div class="why__statement">
+          <p class="why__statement-quote">"Rydym yn ymchwilio i adeiladau.<br/><em>Nid ydym yn eu trwsio."</em></p>
+          <p>Dyma'r annibyniaeth sy'n gwneud canfyddiadau FBSA yn ddibynadwy mewn ymchwiliadau yswiriant, cydymffurfiaeth ac eiddo.</p>
+        </div>
+        <div class="why__badge">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#c9a027" stroke-width="1.5"/><path d="M6 10l2.5 2.5 5.5-5.5" stroke="#c9a027" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>FBSA yw crëwr <strong>Safon AD4</strong> — y fframwaith tystiolaeth strwythuredig a gymhwysir i bob ymchwiliad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ad4" id="ad4">
+  <div class="wrap">
+    <div class="ad4__head">
+      <span class="label label--muted">Safon AD4</span>
+      <h2>Mae Pob Canfyddiad yn Dystiolaeth.<br/>Mae Pob Darn o Dystiolaeth yn <em>Amddiffynadwy.</em></h2>
+      <p>Mae pob ymchwiliad FBSA yn cymhwyso pedwar egwyddor tystiolaeth. Y canlyniad yw canfyddiadau y gallwch ddibynnu arnynt, eu cyfeirio atynt a'u cyflwyno — mewn unrhyw gyd-destun.</p>
+    </div>
+    <div class="ad4__grid">
+      <div class="ad4__card"><p class="ad4__card-num">01</p><div class="ad4__card-icon"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="6" r="3" stroke="#c9a027" stroke-width="1.4"/><path d="M3 15c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="#c9a027" stroke-width="1.4" stroke-linecap="round"/></svg></div><h3>Hunaniaeth</h3><p class="ad4__card-q">Pwy a gofnododd y dystiolaeth?</p></div>
+      <div class="ad4__card"><p class="ad4__card-num">02</p><div class="ad4__card-icon"><svg viewBox="0 0 18 18" fill="none"><path d="M9 1C6.24 1 4 3.24 4 6c0 4 5 11 5 11s5-7 5-11c0-2.76-2.24-5-5-5z" stroke="#c9a027" stroke-width="1.4"/><circle cx="9" cy="6" r="1.5" stroke="#c9a027" stroke-width="1.4"/></svg></div><h3>Lleoliad</h3><p class="ad4__card-q">Ble cafodd ei gofnodi?</p></div>
+      <div class="ad4__card"><p class="ad4__card-num">03</p><div class="ad4__card-icon"><svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#c9a027" stroke-width="1.4"/><path d="M9 5v4l2.5 2.5" stroke="#c9a027" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Amser</h3><p class="ad4__card-q">Pryd cafodd ei gofnodi?</p></div>
+      <div class="ad4__card"><p class="ad4__card-num">04</p><div class="ad4__card-icon"><svg viewBox="0 0 18 18" fill="none"><path d="M9 2L3 4.5v5C3 13 6 15.5 9 17c3-1.5 6-4 6-7.5v-5L9 2z" stroke="#c9a027" stroke-width="1.4" stroke-linejoin="round"/><path d="M6 9l2 2 4-4" stroke="#c9a027" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Cyfanrwydd</h3><p class="ad4__card-q">Sut mae'r dystiolaeth wedi'i diogelu?</p></div>
+    </div>
+    <div class="ad4__result">
+      <div><p class="ad4__result-text">Y Canlyniad: <em>Canfyddiadau Amddiffynadwy.</em></p><p>Addas ar gyfer ymchwiliadau yswiriant, cydymffurfiaeth ac eiddo.</p></div>
+      <a href="#contact" class="btn btn--cta">Archebu Arolygiad</a>
+    </div>
+  </div>
+</section>
+
+<section class="hiw" id="howitworks">
+  <div class="wrap">
+    <div class="hiw__head">
+      <span class="label label--muted">Y Broses</span>
+      <h2>Sut Mae'n Gweithio</h2>
+      <p>O'r ymholiad cyntaf i'r adroddiad terfynol — pum cam syml.</p>
+    </div>
+    <div class="hiw__steps">
+      <div class="hiw__step"><p class="hiw__step-num">1</p><h3>Cyflwyno Ymholiad</h3><p>Dywedwch wrthym am y broblem a'r eiddo. Mae pob ymholiad yn cael ei adolygu'n bersonol gan David Matthews.</p></div>
+      <div class="hiw__step"><p class="hiw__step-num">2</p><h3>Adolygu Gofynion</h3><p>Mae David Matthews yn asesu pob ymholiad yn bersonol. Rydym yn cadarnhau addasrwydd ac yn amlinellu'r gwasanaeth priodol.</p></div>
+      <div class="hiw__step hiw__step--deposit"><p class="hiw__step-num">3</p><h3>Sicrhau Eich Apwyntiad</h3><p>Mae <strong>blaendal archebu o &pound;90</strong> yn ofynnol i gadw dyddiad arolygiad. Ni chaiff dyddiadau eu cadw hyd nes derbynir y taliad. Mae'r blaendal yn cael ei ddidynnu o'r anfoneb derfynol.</p></div>
+      <div class="hiw__step"><p class="hiw__step-num">4</p><h3>Ymchwiliad ar y Safle</h3><p>Casglu tystiolaeth ar y safle yn dilyn Safon AD4 FBSA. Wedi'i gynnal yn bersonol gan David Matthews — dim isgontractwyr.</p></div>
+      <div class="hiw__step"><p class="hiw__step-num">5</p><h3>Derbyn Eich Adroddiad</h3><p>Caiff adroddiadau eu cyhoeddi fel arfer o fewn 24 awr i daliad terfynol. Canfyddiadau annibynnol. Wedi'u cyflwyno'n broffesiynol.</p></div>
+    </div>
+    <div class="hiw__deposit-note">
+      <div class="hiw__deposit-note-icon"><svg viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#c9a027" stroke-width="1.3"/><path d="M7 6v4" stroke="#c9a027" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="4" r="0.6" fill="#c9a027"/></svg></div>
+      <p><strong>Blaendal Archebu:</strong> Mae blaendal archebu o &pound;90 yn ofynnol i sicrhau apwyntiad arolygiad. Mae'r blaendal hwn yn cael ei ddidynnu o'r anfoneb derfynol. Ni chaiff dyddiadau arolygiad eu cadw hyd nes derbynir y taliad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="david" id="david">
+  <div class="wrap">
+    <div class="david__grid">
+      <div>
+        <img class="david__photo" src="../images/david_matthews___director__fbsa_technolo.jpg" alt="David Matthews — Prif Ymchwilydd a Chyfarwyddwr, FBSA Technology Ltd"/>
+        <p class="david__photo-caption">David Matthews<br/>Prif Ymchwilydd &amp; Cyfarwyddwr<br/>FBSA Technology Ltd</p>
+      </div>
+      <div class="david__content">
+        <span class="label">Prif Ymchwilydd</span>
+        <h2 class="david__name">David Matthews</h2>
+        <p class="david__role">Prif Ymchwilydd &amp; Prif Archwilydd — FBSA Technology Ltd</p>
+        <p class="david__body">Crefftwyr cymwys, Peiriannydd Asedau a Goruchwyliwr NEC gyda dros 20 mlynedd o brofiad ymarferol a thechnegol yn ymchwilio i ollyngiadau, lleidder, llwydni, diffygion eiddo a materion cydymffurfiaeth ar draws De a Gorllewin Cymru.</p>
+        <p class="david__body">Mae David yn meddu ar achrediadau mewn asesiad ynni, hylendid dŵr a chydymffurfiaeth adeiladu — gan ddod â manylder lefel peirianyddol i bob ymchwiliad.</p>
+        <div class="david__guarantee"><p><strong>Mae pob ymchwiliad yn cael ei gynnal a'i adolygu'n bersonol gan David Matthews.</strong> Ni fyddwch yn cael eich trosglwyddo i dechnegydd nac isgontractwr. Pan fyddwch chi'n comisiynu FBSA, rydych chi'n cael David.</p></div>
+        <div class="david__creds">
+          <span class="cred">Elmhurst EPC Certified</span>
+          <span class="cred">ABBE Certified</span>
+          <span class="cred">CABWI Certified</span>
+          <span class="cred">NEC Supervisor</span>
+        </div>
+        <a href="#contact" class="btn btn--dark">Archebu Arolygiad</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="services__head">
+      <span class="label label--muted">Gwasanaethau Ymchwilio</span>
+      <h2>Beth Mae FBSA yn ei Ymchwilio</h2>
+      <p>Ymchwiliadau annibynnol. Canfyddiadau ar sail tystiolaeth. Dim gwaith trwsio.</p>
+    </div>
+    <div class="services__grid">
+      <div class="svc">
+        <p class="svc__num">01</p>
+        <h3>Canfod Gollyngiadau &amp; Mynediad Safleoedd</h3>
+        <p class="svc__for">Perchnogion Eiddo &middot; Landlordiaid &middot; Yswirwyr &middot; Addaswyr Colledion</p>
+        <p class="svc__desc">Rydym yn adnabod ffynhonnell mynediad dŵr cudd drwy gasglu tystiolaeth strwythuredig — cyn i unrhyw waith trwsio ddechrau. Annibynnol. Pendant. Wedi'i Ddogfennu.</p>
+        <div class="svc__receives"><p class="svc__receives-label">Rydych chi'n derbyn</p><ul><li>Ymchwiliad delweddu thermol</li><li>Mapio lleithder gyda data wedi'i galibradu</li><li>Adroddiad adnabod ffynhonnell annibynnol</li><li>Cofnod Tystiolaeth AD4 &amp; Adroddiad PDF</li></ul></div>
+        <div class="svc__footer"><div class="svc__price">O &pound;220 <span>yn cynnwys adroddiad</span></div><a href="#contact" class="btn btn--dark btn--sm">Archebu</a></div>
+      </div>
+      <div class="svc">
+        <p class="svc__num">02</p>
+        <h3>Ymchwiliad Lleidder a Llwydni</h3>
+        <p class="svc__for">Perchnogion Tai &middot; Landlordiaid &middot; Tenantiaid &middot; Cymdeithasau Tai</p>
+        <p class="svc__desc">Ymchwiliad i achos gwreiddiol lleidder, anwedd, lleithder treiddiol, lleidder codi a llwydni. Rydym yn adnabod yr achos — nid dim ond y symptomau. Dim gwasanaethau adfer.</p>
+        <div class="svc__receives"><p class="svc__receives-label">Rydych chi'n derbyn</p><ul><li>Asesiad lleithder a lleithder cymharol</li><li>Dadansoddiad halen lle bo angen</li><li>Adroddiad achos gwreiddiol annibynnol</li><li>Cofnod Tystiolaeth AD4 &amp; Adroddiad PDF</li></ul></div>
+        <div class="svc__footer"><div class="svc__price">O &pound;220 <span>yn cynnwys adroddiad</span></div><a href="#contact" class="btn btn--dark btn--sm">Archebu</a></div>
+      </div>
+      <div class="svc">
+        <p class="svc__num">03</p>
+        <h3>Adroddiad Cyflwr Adeilad</h3>
+        <p class="svc__for">Perchnogion Eiddo &middot; Landlordiaid &middot; Cyfreithwyr &middot; Yswirwyr &middot; Datblygwyr</p>
+        <p class="svc__desc">Asesiad ar sail tystiolaeth o berfformiad adeilad, ansawdd adeiladu a materion cydymffurfiaeth. Canfyddiadau annibynnol wedi'u paratoi i safon gadarn, addas ar gyfer cyfeirio, yswiriant a datrys anghydfodau.</p>
+        <div class="svc__receives"><p class="svc__receives-label">Rydych chi'n derbyn</p><ul><li>Asesiad cyflwr ar y safle</li><li>Barn arbenigol ar ansawdd adeiladu a chydymffurfiaeth</li><li>Adroddiad dogfennol annibynnol</li><li>Cofnod Tystiolaeth AD4 &amp; Adroddiad PDF</li></ul></div>
+        <div class="svc__footer"><div class="svc__price">O &pound;220 <span>yn cynnwys adroddiad</span></div><a href="#contact" class="btn btn--dark btn--sm">Archebu</a></div>
+      </div>
+      <div class="svc">
+        <p class="svc__num">04</p>
+        <h3>Asesiadau EPC a MEES</h3>
+        <p class="svc__for">Landlordiaid &middot; Buddsoddwyr Eiddo &middot; Darparwyr Tai</p>
+        <p class="svc__desc">Tystysgrifau Perfformiad Ynni ac asesiadau Safonau Effeithlonrwydd Ynni Lleiaf. Cefnogi cydymffurfiaeth landlordiaid ar draws De a Gorllewin Cymru.</p>
+        <div class="svc__receives"><p class="svc__receives-label">Rydych chi'n derbyn</p><ul><li>Asesiad ynni ar y safle</li><li>EPC Achrededig Elmhurst</li><li>Gwiriad cydymffurfiaeth MEES</li><li>Canllawiau cydymffurfiaeth landlord</li></ul></div>
+        <div class="svc__footer"><div class="svc__price">O &pound;90 <span>yn cynnwys tystysgrif</span></div><a href="#contact" class="btn btn--dark btn--sm">Archebu</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="receive" id="receive">
+  <div class="wrap">
+    <div class="receive__head">
+      <span class="label label--light">Pob Ymchwiliad</span>
+      <h2>Beth Rydych Chi'n ei Dderbyn</h2>
+      <p>Mae pob ymchwiliad FBSA yn cynhyrchu cofnod dogfennol, wedi'i ddiogelu, ac adroddiad proffesiynol.</p>
+    </div>
+    <div class="receive__grid">
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Ymchwiliad Annibynnol</h4><p>Wedi'i gynnal yn bersonol gan David Matthews. Dim isgontractwyr. Dim gwrthdaro buddiannau.</p></div>
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Casglu Tystiolaeth</h4><p>Casglu tystiolaeth strwythuredig yn dilyn Safon AD4 — nid archwiliad gweledol yn unig.</p></div>
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Cofnod Ffotograffig</h4><p>Delweddu thermol a ffotograffiaeth safle. Mae pob canfyddiad wedi'i ddogfennu a'i stampio â'r amser.</p></div>
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Dadansoddiad Achos Gwreiddiol</h4><p>Yr achos wedi'i adnabod a'i brofi — nid dim ond y symptom. Casgliadau clir y gallwch weithredu arnynt.</p></div>
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Adroddiad PDF Proffesiynol</h4><p>Adroddiad ysgrifenedig addas ar gyfer ymchwiliadau yswiriant, cydymffurfiaeth ac eiddo.</p></div>
+      <div class="receive__item"><div class="receive__tick"><svg viewBox="0 0 11 9" fill="none"><path d="M1 4.5l3 3 6-7" stroke="#c9a027" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Argymhellion Ymarferol</h4><p>Canllawiau ymarferol, diduedd ar y camau nesaf — heb unrhyw fuddiant ariannol yn y canlyniad.</p></div>
+    </div>
+    <div class="receive__cta">
+      <a href="#contact" class="btn btn--cta btn--lg">Archebu Arolygiad</a>
+      <span class="receive__note">O &pound;220 &nbsp;&middot;&nbsp; De a Gorllewin Cymru &nbsp;&middot;&nbsp; Safon AD4 ar bob achos</span>
+    </div>
+  </div>
+</section>
+
+<section class="who" id="who">
+  <div class="wrap">
+    <div class="who__head">
+      <span class="label label--muted">Cleientiaid</span>
+      <h2>Pwy Rydym Ni'n ei Helpu</h2>
+      <p>Mae FBSA yn gweithio gydag unrhyw un sydd angen canfyddiadau ymchwilio adeiladu annibynnol, ar sail tystiolaeth.</p>
+    </div>
+    <div class="who__grid">
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2L2 6v8h4v-4h4v4h4V6L8 2z" stroke="#c9a027" stroke-width="1.3" stroke-linejoin="round"/></svg></div><h4>Perchnogion Tai</h4><p>Gollyngiadau, lleidder, llwydni — yr achos gwirioneddol</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M3 6h10v8H3V6z" stroke="#c9a027" stroke-width="1.3" stroke-linejoin="round"/><path d="M1 6l7-4 7 4" stroke="#c9a027" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 14V9h4v5" stroke="#c9a027" stroke-width="1.3"/></svg></div><h4>Landlordiaid</h4><p>Tystiolaeth gydymffurfiaeth ar gyfer cwynion tai</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1" stroke="#c9a027" stroke-width="1.3"/><path d="M5 4V3a3 3 0 016 0v1" stroke="#c9a027" stroke-width="1.3" stroke-linecap="round"/></svg></div><h4>Cymdeithasau Tai</h4><p>Canfyddiadau annibynnol ar gyfer anghydfodau tenantiaid</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="#c9a027" stroke-width="1.3"/><path d="M2 14c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="#c9a027" stroke-width="1.3" stroke-linecap="round"/></svg></div><h4>Awdurdodau Lleol</h4><p>Tystiolaeth dechnegol ar gyfer penderfyniadau gorfodi</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="1" stroke="#c9a027" stroke-width="1.3"/><path d="M5 8h6M5 5h6M5 11h4" stroke="#c9a027" stroke-width="1.3" stroke-linecap="round"/></svg></div><h4>Rheolwyr Eiddo</h4><p>Asesiad gwrthrychol o ddiffygion a adroddwyd</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2L3 4v4c0 3.1 2.1 5.5 5 6.5 2.9-1 5-3.4 5-6.5V4L8 2z" stroke="#c9a027" stroke-width="1.3" stroke-linejoin="round"/></svg></div><h4>Yswirwyr</h4><p>Tystiolaeth annibynnol i gynorthwyo neu setlo hawliadau</p></div>
+      <div class="who__item"><div class="who__item-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M4 2h8l2 4-6 8-6-8 2-4z" stroke="#c9a027" stroke-width="1.3" stroke-linejoin="round"/></svg></div><h4>Cyfreithwyr</h4><p>Canfyddiadau amddiffynadwy ar gyfer materion eiddo</p></div>
+      <div class="who__item" style="background:var(--navy);border-color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;"><p style="font-size:13px;color:rgba(255,255,255,0.55);text-align:center;line-height:1.5;">Ddim yn siŵr a all FBSA helpu?</p><a href="#contact" class="btn btn--outline-light btn--sm">Gofynnwch i Ni</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="coverage" id="coverage">
+  <div class="wrap">
+    <div class="coverage__grid">
+      <div class="coverage__left">
+        <span class="label label--muted">Ardal Wasanaeth</span>
+        <h2>Ardaloedd a Gwasanaethir</h2>
+        <p>Mae FBSA yn darparu ymchwiliadau adeiladau annibynnol ar draws De a Gorllewin Cymru. Cysylltwch â ni os yw eich eiddo y tu allan i'r ardaloedd hyn.</p>
+        <a href="#contact" class="btn btn--outline btn--sm">Cysylltu â Ni</a>
+      </div>
+      <div class="coverage__counties">
+        <div class="coverage__county"><p class="coverage__county-name">Sir Gaerfyrddin</p><ul><li>Caerfyrddin</li><li>Llanelli</li><li>Rhydaman</li><li>Llandeilo</li><li>Porth Tywyn</li></ul></div>
+        <div class="coverage__county"><p class="coverage__county-name">Sir Benfro</p><ul><li>Hwlffordd</li><li>Aberdaugleddau</li><li>Penfro</li><li>Dinbych-y-pysgod</li><li>Abergwaun</li></ul></div>
+        <div class="coverage__county"><p class="coverage__county-name">Ceredigion</p><ul><li>Aberystwyth</li><li>Aberteifi</li><li>Llanbedr Pont Steffan</li><li>Aberaeron</li></ul></div>
+        <div class="coverage__county"><p class="coverage__county-name">Abertawe</p><ul><li>Dinas Abertawe</li><li>Gorseinon</li><li>Pontarddulais</li><li>Y Mwmbwls</li></ul></div>
+        <div class="coverage__county"><p class="coverage__county-name">Castell-nedd Port Talbot</p><ul><li>Castell-nedd</li><li>Port Talbot</li><li>Pontardawe</li><li>Llansawel</li></ul></div>
+        <div class="coverage__other"><strong>Y tu allan i'r ardaloedd hyn?</strong> Mae gwasanaeth ar gael ar draws De a Gorllewin Cymru drwy drefniant. <a href="#contact" style="color:var(--gold);text-decoration:underline;">Cysylltwch â ni i drafod &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="faq__head">
+      <span class="label label--muted">Cwestiynau Cyffredin</span>
+      <h2>Cwestiynau a Ofynnir yn Aml</h2>
+      <p>Atebion syml cyn i chi archebu.</p>
+    </div>
+    <div class="faq__grid">
+      <div class="faq__item"><h4>A ydych chi'n cynnal gwaith trwsio?</h4><p>Nac ydym. Mae FBSA yn darparu ymchwiliadau annibynnol ac adroddiadau ysgrifenedig yn unig. Nid ydym yn cynnal unrhyw waith adfer, trwsio na gosod. Mae'r annibyniaeth hon yn gwneud ein canfyddiadau yn ddibynadwy.</p></div>
+      <div class="faq__item"><h4>Faint yw'r blaendal archebu?</h4><p>Mae blaendal archebu o &pound;90 yn ofynnol i sicrhau eich dyddiad arolygiad. Mae hwn yn cael ei ddidynnu o'r anfoneb derfynol. Ni chaiff dyddiadau eu cadw hyd nes derbynir y blaendal.</p></div>
+      <div class="faq__item"><h4>Pa mor gyflym y caiff adroddiadau eu cyhoeddi?</h4><p>Caiff adroddiadau eu cyhoeddi fel arfer o fewn 24 awr i daliad terfynol. Mae pob adroddiad yn cael ei baratoi a'i adolygu'n bersonol gan David Matthews.</p></div>
+      <div class="faq__item"><h4>Pa ardaloedd rydych chi'n eu gwasanaethu?</h4><p>De a Gorllewin Cymru — gan gynnwys Sir Gaerfyrddin, Sir Benfro, Abertawe, Castell-nedd Port Talbot a Cheredigion. Gall gwasanaeth y tu hwnt i'r ardaloedd hyn fod ar gael drwy drefniant.</p></div>
+      <div class="faq__item"><h4>Beth os oes angen arolygiad brys arnaf?</h4><p>Dewiswch "Apwyntiad Cynnar wedi'i Ofyn" ar y ffurflen ymholiad. Mae Datganiad Dechrau Cynnar yn caniatáu i FBSA ddechrau gwasanaethau cyn diwedd unrhyw gyfnod canslo cymwys, yn amodol ar argaeledd.</p></div>
+      <div class="faq__item"><h4>Pwy sy'n cynnal yr ymchwiliad?</h4><p>Mae pob ymchwiliad yn cael ei gynnal yn bersonol gan David Matthews — Prif Ymchwilydd a Chyfarwyddwr FBSA Technology Ltd. Nid ydym yn defnyddio isgontractwyr na thechnegwyr iau.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact__grid">
+      <div class="contact__info">
+        <span class="label label--muted">Archebu Arolygiad</span>
+        <h2>Cysylltu â Ni</h2>
+        <p>Llenwch y ffurflen a bydd David yn ymateb — fel arfer yr un diwrnod.</p>
+        <div class="contact__deposit"><p><strong>Blaendal Archebu:</strong> Mae blaendal o &pound;90 yn ofynnol i gadarnhau eich apwyntiad. Mae hwn yn cael ei ddidynnu o'ch anfoneb derfynol. Ni chaiff dyddiadau eu cadw hyd nes cadarnheir y taliad.</p></div>
+        <div class="contact__method"><div class="contact__dot"></div><div><p class="contact__method-label">Ffôn</p><a href="tel:07883915332">07883 915332</a></div></div>
+        <div class="contact__method"><div class="contact__dot"></div><div><p class="contact__method-label">E-bost</p><a href="mailto:david@fbsa.co.uk">david@fbsa.co.uk</a></div></div>
+        <div class="contact__method"><div class="contact__dot"></div><div><p class="contact__method-label">Gwefan</p><a href="https://fbsa.co.uk">fbsa.co.uk</a></div></div>
+      </div>
+      <div>
+        <form class="form-wrap" id="js-form" action="https://formspree.io/f/xnpdpyn" method="POST">
+          <input type="hidden" name="_subject" value="Ymholiad Arolygiad FBSA — Cymraeg"/>
+          <input type="text" name="_gotcha" style="display:none"/>
+          <input type="hidden" name="_next" value="https://fbsa.co.uk/diolch"/>
+          <h3>Anfon Ymholiad Arolygiad</h3>
+          <p>Rydym yn ymateb i bob ymholiad — fel arfer yr un diwrnod.</p>
+          <div id="js-msg-ok" class="form-msg form-msg--ok">Diolch. Mae eich ymholiad wedi'i dderbyn — bydd David mewn cysylltiad yn fuan.</div>
+          <div id="js-msg-err" class="form-msg form-msg--err">Aeth rhywbeth o'i le. Ffoniwch <strong>07883 915332</strong> neu ebostiwch David yn uniongyrchol.</div>
+          <div class="form-row">
+            <div class="form-field"><label for="fn">Enw Cyntaf *</label><input type="text" id="fn" name="first_name" placeholder="Enw cyntaf" required/></div>
+            <div class="form-field"><label for="ln">Cyfenw *</label><input type="text" id="ln" name="last_name" placeholder="Cyfenw" required/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-field"><label for="ph">Ffôn *</label><input type="tel" id="ph" name="phone" placeholder="07xxx xxxxxx" required/></div>
+            <div class="form-field"><label for="em">E-bost *</label><input type="email" id="em" name="email" placeholder="chi@ebost.com" required/></div>
+          </div>
+          <div class="form-field">
+            <label for="svc">Gwasanaeth Angenrheidiol *</label>
+            <select id="svc" name="service_type" required>
+              <option value="" disabled selected>Dewiswch wasanaeth...</option>
+              <option>Canfod Gollyngiadau</option>
+              <option>Ymchwiliad Lleidder a Llwydni</option>
+              <option>Adroddiad Cyflwr Adeilad</option>
+              <option>Asesiad EPC a MEES</option>
+              <option>Ansicr — angen cyngor</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="proptype">Math o Eiddo *</label>
+            <select id="proptype" name="property_type" required>
+              <option value="" disabled selected>Dewiswch fath o eiddo...</option>
+              <option>Preswyl</option>
+              <option>Eiddo Rhent</option>
+              <option>Masnachol</option>
+              <option>Tai Cymdeithasol</option>
+            </select>
+          </div>
+          <div class="form-field"><label for="addr">Cyfeiriad yr Eiddo *</label><input type="text" id="addr" name="property_address" placeholder="Cyfeiriad llawn gan gynnwys cod post" required/></div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact_pref">Dull Cyswllt a Ffefrir</label>
+              <select id="contact_pref" name="preferred_contact">
+                <option value="" disabled selected>Dewiswch...</option>
+                <option>E-bost</option>
+                <option>Ffôn</option>
+                <option>Naill ai</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="timeframe">Amserlen a Ffefrir *</label>
+              <select id="timeframe" name="inspection_timeframe" required>
+                <option value="" disabled selected>Dewiswch...</option>
+                <option value="next">Apwyntiad Nesaf Sydd Ar Gael</option>
+                <option value="early">Apwyntiad Cynnar wedi'i Ofyn</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field"><label for="desc">Disgrifiad Byr o'r Mater</label><textarea id="desc" name="issue_details" placeholder="Pryd dechreuodd? Beth ydych chi wedi'i sylwi?"></textarea></div>
+          <div class="deposit-confirm">
+            <div class="deposit-confirm__head">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#c9a027" stroke-width="1.4"/><path d="M8 5v4" stroke="#c9a027" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11" r="0.6" fill="#c9a027"/></svg>
+              <h4>Blaendal Archebu</h4>
+            </div>
+            <p>Mae blaendal archebu o &pound;90 yn ofynnol i sicrhau apwyntiad arolygiad. Mae'r blaendal yn cael ei ddidynnu o'r anfoneb derfynol. Ni chaiff dyddiadau arolygiad eu cadw hyd nes y derbynnir y taliad.</p>
+            <div class="form-field--check">
+              <input type="checkbox" id="dep1" name="deposit_understood" value="yes" required/>
+              <label for="dep1">Rwy'n deall bod blaendal archebu o &pound;90 yn ofynnol i sicrhau apwyntiad arolygiad.</label>
+            </div>
+            <div class="form-field--check">
+              <input type="checkbox" id="dep2" name="early_start_request" value="yes"/>
+              <label for="dep2">Rwy'n gofyn i FBSA ddechrau gwasanaethau cyn diwedd unrhyw gyfnod canslo cymwys.</label>
+            </div>
+            <div class="form-field--check">
+              <input type="checkbox" id="dep3" name="cancellation_rights_understood" value="yes"/>
+              <label for="dep3">Rwy'n deall y gall hawliau canslo gael eu heffeithio ar ôl i wasanaethau ddechrau.</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--cta btn--lg form-submit">Anfon Ymholiad</button>
+          <p class="form-note">Mae blaendal archebu o &pound;90 yn ofynnol i gadarnhau eich apwyntiad. Bydd David yn anfon dolen talu ddiogel ar ôl derbyn eich ymholiad.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <div class="wrap">
+    <p><strong>Ymwadiad:</strong> Mae FBSA Technology Ltd yn darparu gwasanaethau ymchwilio adeiladau fforensig annibynnol ac adrodd yn unig. Nid ydym yn cynnal gwaith trwsio nac yn darparu argymhellion adfer. Mae Safon AD4 yn eiddo deallusol perchnogol i FBSA Technology Ltd. Cedwir pob hawl. <em>Diogelu'r Edau Aur i Gymru&trade;</em></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="../images/fbsa_technology_ltd.png" alt="FBSA Technology Ltd"/>
+        <p>Ymchwiliadau adeiladau annibynnol ar draws De a Gorllewin Cymru. Rydym yn ymchwilio. Nid ydym yn trwsio.</p>
+      </div>
+      <div class="footer__col"><h4>Gwasanaethau</h4><ul><li><a href="#services">Canfod Gollyngiadau</a></li><li><a href="#services">Lleidder a Llwydni</a></li><li><a href="#services">Cyflwr Adeilad</a></li><li><a href="#services">EPC a MEES</a></li></ul></div>
+      <div class="footer__col"><h4>Cwmni</h4><ul><li><a href="#why">Annibyniaeth</a></li><li><a href="#ad4">Safon AD4</a></li><li><a href="#david">David Matthews</a></li><li><a href="../index.html">English</a></li></ul></div>
+      <div class="footer__col"><h4>Cysylltu</h4><ul><li><a href="tel:07883915332">07883 915332</a></li><li><a href="mailto:david@fbsa.co.uk">david@fbsa.co.uk</a></li><li><a href="https://fbsa.co.uk">fbsa.co.uk</a></li></ul></div>
+    </div>
+    <div class="footer__seo">
+      <p>FBSA Technology Ltd &nbsp;|&nbsp; Ymchwiliadau Adeiladau Annibynnol &nbsp;|&nbsp; De a Gorllewin Cymru<br/>Canfod Gollyngiadau &nbsp;&middot;&nbsp; Ymchwiliadau Lleidder a Llwydni &nbsp;&middot;&nbsp; Adroddiadau Cyflwr Adeilad &nbsp;&middot;&nbsp; Asesiadau EPC a MEES<br/>Sir Gaerfyrddin &nbsp;&middot;&nbsp; Sir Benfro &nbsp;&middot;&nbsp; Abertawe &nbsp;&middot;&nbsp; Castell-nedd Port Talbot &nbsp;&middot;&nbsp; Ceredigion &nbsp;&middot;&nbsp; De a Gorllewin Cymru</p>
+    </div>
+    <div class="footer__seal">
+      <img src="../images/guardians_of_the_thread__mdash__fbsa_sea.png" alt="Gwarcheidwaid yr Edau — Sêl Cymeradwyaeth FBSA"/>
+      <p class="footer__seal-cap">Gwarcheidwaid yr Edau &nbsp;&middot;&nbsp; Diogelu'r Edau Aur i Gymru&trade; &nbsp;&middot;&nbsp; Est 2026</p>
+    </div>
+    <div class="footer__legal">
+      <a onclick="openModal('terms')">Telerau Busnes</a>
+      <a onclick="openModal('privacy')">Polisi Preifatrwydd</a>
+      <a onclick="openModal('cookies')">Polisi Cwcis</a>
+      <a onclick="openModal('cancellation')">Polisi Canslo</a>
+      <a onclick="openModal('complaints')">Gweithdrefn Cwynion</a>
+      <a onclick="openModal('accessibility')">Datganiad Hygyrchedd</a>
+      <a onclick="openModal('dataretention')">Cadw Data a Thrin Tystiolaeth</a>
+    </div>
+    <div class="footer__ip">
+      <p>AD4&trade; yw methodoleg cipio tystiolaeth ac adrodd berchnogol a ddatblygwyd gan FBSA Technology Ltd. &nbsp;&middot;&nbsp; Edau Aur Cymru&trade; yw fframwaith perchnogol ar gyfer cadwraeth a chadw tystiolaeth adeiladu a chofnodion cysylltiedig.</p>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__bottom-copy">&copy; 2026 FBSA Technology Ltd. Cofrestrwyd yng Nghymru a Lloegr, Rhif Cwmni 17249280. Swyddfa gofrestredig: 10 International House, 10 Churchill Way, Caerdydd, CF10 2HE. Yn masnachu fel FBSA &mdash; Archwiliad Safonau Adeiladau Fforensig. Cofrestru ICO: 00014793369</span>
+      <div class="footer__badges"><span class="badge">AD4&trade;</span><span class="badge">Elmhurst Certified</span><span class="badge">ABBE Certified</span><span class="badge">Edau Aur Cymru&trade;</span></div>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay-terms"><div class="modal"><button class="modal__close" onclick="closeModal('terms')">&times;</button><h2>Telerau Busnes</h2><p class="modal__ver">Fersiwn 1.0 &middot; Mewn grym 1 Gorffennaf 2026 &middot; Rhif Cwmni 17249280</p><h3>1. Cwmpas y Gwasanaeth</h3><p>Mae FBSA Technology Ltd yn darparu gwasanaethau ymchwilio adeiladau fforensig annibynnol ac adrodd yn unig. Nid ydym yn cynnal gwaith trwsio, adfer na gosod. Mae Safon AD4 yn cael ei gymhwyso i bob gwaith ymchwiliol.</p><h3>2. Arolygiad yn Unig</h3><p>Mae holl wasanaethau FBSA yn ymchwiliol a chynghorol eu natur. Nid yw FBSA yn ymgymryd â, yn argymell nac yn trefnu unrhyw waith trwsio nac adfer.</p><h3>3. Blaendal Archebu</h3><p>Mae blaendal archebu anadferadwy o &pound;90 yn daladwy ar adeg archebu ac yn cael ei ddidynnu o'r anfoneb derfynol. Ni chaiff dyddiadau arolygiad eu cadw hyd nes derbynir y blaendal.</p><h3>4. Ffioedd a Thaliad</h3><p>Mae ein hamserlen prisio yn berthnasol oni chytunwyd ar ddyfynbris ysgrifenedig. Mae'r gweddill yn ddyledus ar gwblhau'r arolwg ac cyn rhyddhau'r Adroddiad.</p><h3>5. Canslo</h3><p>Mwy na 48 awr: blaendal yn unig. O fewn 48 awr: hyd at 50% o ffi'r arolwg. Ar y diwrnod neu ar ôl ymweld: ffi lawn yn daladwy.</p><h3>6. Cyfyngiad Atebolrwydd</h3><p>Ni fydd cyfanswm atebolrwydd FBSA yn fwy na chyfanswm y ffioedd a dalwyd gan y Cleient am yr Arolwg hwnnw.</p><h3>7. Defnyddio Adroddiad</h3><p>Mae adroddiadau'n cael eu paratoi ar gyfer y Cleient comisiynol a'r diben a nodwyd. Ni ellir dibynnu ar Adroddiadau gan drydydd partïon heb ganiatâd ysgrifenedig penodol FBSA.</p><h3>8. Eiddo Deallusol</h3><p>Mae pob Adroddiad a Safon AD4 yn eiddo i FBSA Technology Ltd.</p><h3>9. Cyfraith Llywodraethu</h3><p>Llywodraethir y Telerau hyn gan gyfreithiau Cymru a Lloegr.</p></div></div>
+
+<div class="overlay" id="overlay-privacy"><div class="modal"><button class="modal__close" onclick="closeModal('privacy')">&times;</button><h2>Polisi Preifatrwydd</h2><p class="modal__ver">Fersiwn 1.0 &middot; Mewn grym 1 Gorffennaf 2026 &middot; Rhif Cwmni 17249280</p><h3>1. Pwy Ydym Ni</h3><p>FBSA Technology Ltd, Rhif Cwmni 17249280. 10 International House, 10 Churchill Way, Caerdydd, CF10 2HE. Cyswllt: David Matthews. E-bost: david@fbsa.co.uk. Ffôn: 07883 915332. Cofrestru ICO: 00014793369.</p><h3>2. Pa Ddata Rydym yn ei Gasglu</h3><p>Data cyswllt: enw llawn, cyfeiriad, e-bost, ffôn. Data eiddo: cyfeiriad, manylion adeiladu, mesuriadau, delweddau thermol, nodiadau safle. Data trafodion: ffioedd, cyfeiriadau taliad. Data cyfathrebu: gohebiaeth.</p><h3>3. Pam Rydym yn Defnyddio Eich Data</h3><p>I ddarparu'r arolwg a'r adroddiad; archebu a gohebiaeth; anfonebu; cofnodi EPC; cynnal cofnodion tystiolaeth am 15 mlynedd dan Safon AD4; ymateb i gwynion.</p><h3>4. Rhannu Data</h3><p>Nid ydym yn gwerthu, rhentu na masnachu eich data. Dim ond gyda: y Gofrestr EPC Genedlaethol; labordai; addaswyr colledion neu yswirwyr lle y cyfarwyddwyd; awdurdodau cyfreithiol lle bo'r gyfraith yn ei gwneud yn ofynnol.</p><h3>5. Eich Hawliau</h3><p>Mynediad, cywiro, dileu, cyfyngiad, cludadwyedd, gwrthwynebiad. Ymateb o fewn un mis calendr. ICO: www.ico.org.uk / 0303 123 1113.</p></div></div>
+
+<div class="overlay" id="overlay-cookies"><div class="modal"><button class="modal__close" onclick="closeModal('cookies')">&times;</button><h2>Polisi Cwcis</h2><p class="modal__ver">Diweddarwyd: 15 Gorffennaf 2026 &middot; Rhif Cwmni 17249280</p><h3>Beth Yw Cwcis?</h3><p>Ffeiliau testun bach a gedwir ar eich dyfais i helpu'r wefan i weithio'n gywir.</p><h3>Cwcis Rydym yn eu Defnyddio</h3><table class="modal-tbl"><tr><th>Math</th><th>Pwrpas</th><th>Gofynnol?</th></tr><tr><td>Hanfodol</td><td>Llywio safle, ffurflenni, storio dewisiadau cwcis.</td><td>Ymlaen bob amser</td></tr><tr><td>Perfformiad</td><td>Dadansoddeg ddienw i wella'r safle.</td><td>Angen caniatâd</td></tr></table><h3>Eich Hawliau</h3><p>Gallwch dderbyn neu wrthod cwcis nad ydynt yn hanfodol ar ymweliad cyntaf. Cyswllt: david@fbsa.co.uk. Cofrestru ICO: 00014793369.</p></div></div>
+
+<div class="overlay" id="overlay-cancellation"><div class="modal"><button class="modal__close" onclick="closeModal('cancellation')">&times;</button><h2>Polisi Canslo</h2><p class="modal__ver">Fersiwn 1.0 &middot; Mewn grym 1 Gorffennaf 2026 &middot; Rhif Cwmni 17249280</p><h3>Ein Ymrwymiad</h3><p>Rydym yn deall y gall amgylchiadau newid. Mae'r polisi hwn yn nodi'r taliadau sy'n berthnasol pan gaiff archeb ei chanslo neu ei had-drefnu.</p><h3>Taliadau Canslo</h3><table class="modal-tbl"><tr><th>Rhybudd a Roddir</th><th>Tâl</th></tr><tr><td>48 awr neu fwy cyn yr arolwg</td><td>Dim tâl — blaendal yn cael ei drosglwyddo i apwyntiad wedi'i had-drefnu, neu ei ad-dalu yn ôl ein disgresiwn</td></tr><tr><td>O fewn 48 awr i'r arolwg</td><td>Hyd at 50% o ffi'r arolwg</td></tr><tr><td>Ar yr un diwrnod, neu ar ôl i bresenoldeb ddechrau</td><td>Ffi arolwg lawn yn daladwy</td></tr></table><h3>Sut i Ganslo</h3><p>Rhowch wybod i ni cyn gynted â phosibl: <strong>07883 915332</strong> &nbsp;|&nbsp; <strong>david@fbsa.co.uk</strong></p><h3>Peidio â Mynychu</h3><p>Os bydd FBSA yn mynychu'r cyfeiriad cytunedig a bod mynediad heb fod ar gael, codir ffi'r arolwg lawn. Byddwn yn aros hyd at 15 munud cyn gadael.</p><h3>Canslo gan FBSA</h3><p>Os bydd angen i FBSA ganslo, cynigir apwyntiad wedi'i had-drefnu neu ad-daliad llawn.</p></div></div>
+
+<div class="overlay" id="overlay-complaints"><div class="modal"><button class="modal__close" onclick="closeModal('complaints')">&times;</button><h2>Gweithdrefn Cwynion</h2><p class="modal__ver">Fersiwn 1.0 &middot; Mewn grym 1 Gorffennaf 2026 &middot; FBSA Technology Ltd</p><h3>Ein Hymrwymiad</h3><p>Mae FBSA Technology Ltd yn cymryd pob cwyn o ddifrif ac yn anelu at eu datrys yn brydlon, yn deg ac yn dryloyw.</p><h3>Sut i Gwyno</h3><table class="modal-tbl"><tr><th>Cyswllt</th><th>Manylion</th></tr><tr><td>Cyfarwyddwr</td><td>David Matthews</td></tr><tr><td>E-bost</td><td>david@fbsa.co.uk</td></tr><tr><td>Ffôn</td><td>07883 915332</td></tr><tr><td>Post</td><td>10 International House, 10 Churchill Way, Caerdydd, CF10 2HE</td></tr></table><h3>Amserlenni</h3><p>Cydnabyddiaeth o fewn 3 diwrnod gwaith. Ymateb ysgrifenedig llawn o fewn 10 diwrnod gwaith. Ymateb terfynol o fewn 15 diwrnod gwaith os oes angen cam pellach.</p></div></div>
+
+<div class="overlay" id="overlay-accessibility"><div class="modal"><button class="modal__close" onclick="closeModal('accessibility')">&times;</button><h2>Datganiad Hygyrchedd</h2><p class="modal__ver">Fersiwn 1.0 &middot; Cyhoeddwyd 1 Gorffennaf 2026 &middot; FBSA Technology Ltd</p><h3>Ein Hymrwymiad</h3><p>Mae FBSA Technology Ltd wedi ymrwymo i sicrhau bod ein gwefan yn hygyrch i bob defnyddiwr. Rydym yn anelu at WCAG 2.1 Lefel AA. Camau a gymerwyd: strwythur HTML semantig; cyferbyniad lliw digonol; testun amgen disgrifiadol; elfennau y gellir eu llywio â bysellfwrdd; dyluniad ymatebol; iaith naturiol plaen.</p><h3>Cyswllt</h3><p>E-bost: david@fbsa.co.uk &middot; Ffôn: 07883 915332. Rydym yn anelu at ymateb o fewn 5 diwrnod gwaith.</p></div></div>
+
+<div class="overlay" id="overlay-dataretention"><div class="modal"><button class="modal__close" onclick="closeModal('dataretention')">&times;</button><h2>Polisi Cadw Data a Thrin Tystiolaeth</h2><p class="modal__ver">Fersiwn 1.0 &middot; Mewn grym 1 Gorffennaf 2026 &middot; FBSA Technology Ltd</p><h3>1. Pwrpas</h3><p>Mae'r polisi hwn yn nodi sut mae FBSA Technology Ltd yn cadw, storio, amddiffyn a gwaredu tystiolaeth arolwg a data personol, gan gefnogi Safon AD4 a Diogelu'r Edau Aur i Gymru&trade;.</p><h3>2. Cyfanrwydd Tystiolaeth AD4</h3><p>Rheolir pob tystiolaeth dan Safon AD4 — Hunaniaeth, Lleoliad, Amser, Cyfanrwydd. Mae pob ffotograff a darlleniad yn stampiog â'r amser. Dim golygu ar ôl casglu. Cynhelir cadwyn ddi-dor o dystiolaeth.</p><h3>3. Cyfnodau Cadw</h3><table class="modal-tbl"><tr><th>Math o Gofnod</th><th>Cyfnod Cadw</th></tr><tr><td>Cofnodion tystiolaeth arolwg</td><td>Isafswm 15 mlynedd</td></tr><tr><td>Cofnodion EPC</td><td>Isafswm 15 mlynedd</td></tr><tr><td>Cofnodion ariannol</td><td>Isafswm 6 mlynedd</td></tr><tr><td>Cofnodion cwynion</td><td>6 mlynedd</td></tr><tr><td>Gohebiaeth</td><td>3 mlynedd</td></tr></table><h3>4. Storio a Diogelwch</h3><p>Storfa ddigidol amgryptio â chyfrinair. Mynediad wedi'i gyfyngu i David Matthews. Copi wrth gefn cwmwl y DU. Gwaredu drwy ddileu diogel.</p></div></div>
+
+<div class="cookie" id="js-cookie">
+  <div class="cookie__inner">
+    <p>Rydym yn defnyddio cwcis hanfodol i wneud i'r wefan hon weithio. Gyda'ch caniatâd, gallwn hefyd ddefnyddio cwcis perfformiad. <a onclick="openModal('cookies')">Polisi Cwcis</a></p>
+    <div class="cookie__btns">
+      <button class="cookie__accept" onclick="acceptCookies()">Derbyn y cyfan</button>
+      <button class="cookie__decline" onclick="declineCookies()">Hanfodol yn unig</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const burger=document.getElementById('js-burger');
+const drawer=document.getElementById('js-drawer');
+burger.addEventListener('click',()=>{const o=drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));});
+document.querySelectorAll('.js-close-drawer').forEach(el=>el.addEventListener('click',()=>{drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');}));
+function openModal(id){const el=document.getElementById('overlay-'+id);if(el){el.classList.add('is-open');document.body.style.overflow='hidden';}}
+function closeModal(id){const el=document.getElementById('overlay-'+id);if(el){el.classList.remove('is-open');document.body.style.overflow='';}}
+document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{if(e.target===o){o.classList.remove('is-open');document.body.style.overflow='';}}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.overlay.is-open').forEach(o=>{o.classList.remove('is-open');document.body.style.overflow='';});});
+(function(){if(localStorage.getItem('fbsa_cookie_choice'))document.getElementById('js-cookie').style.display='none';})();
+function acceptCookies(){localStorage.setItem('fbsa_cookie_choice','all');document.getElementById('js-cookie').style.display='none';}
+function declineCookies(){localStorage.setItem('fbsa_cookie_choice','essential');document.getElementById('js-cookie').style.display='none';}
+const form=document.getElementById('js-form');
+const msgOk=document.getElementById('js-msg-ok');
+const msgErr=document.getElementById('js-msg-err');
+if(form){
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    const btn=form.querySelector('button[type="submit"]');
+    msgOk.style.display='none';msgErr.style.display='none';
+    btn.textContent='Anfon...';btn.disabled=true;
+    try{
+      const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+      if(res.ok){msgOk.style.display='block';form.reset();form.scrollIntoView({behavior:'smooth',block:'start'});}
+      else{msgErr.style.display='block';}
+    }catch{msgErr.style.display='block';}
+    btn.textContent='Anfon Ymholiad';btn.disabled=false;
+  });
+}
+</script>
+</body>
+</html>
